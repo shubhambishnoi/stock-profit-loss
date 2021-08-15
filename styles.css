@@ -1,0 +1,62 @@
+:root{
+    --primary-color:blueviolet;
+}
+
+.input-label{
+   display: block;
+   margin-top:40px;
+   margin-left:500px;
+   font-size:20px;
+   font-weight: 400;
+}
+
+.input{
+    border:1px solid var(--primary-color);
+    border-radius: .5rem;
+    padding:1rem;
+    width:20rem;
+}
+
+#submit-btn{
+    margin-top:20px;
+    margin-left:600px;
+    border:2px solid var(--primary-color);
+    border-radius: 1rem;
+    padding:1rem;
+}
+
+#output{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    background-color: black;
+    width:100%;
+    color:white;
+}
+
+footer>div{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+footer>ul{
+    list-style: none;
+    text-align: center;
+    color:white;
+}
+
+footer>ul>li{
+    display: inline;
+    padding:0rem 0.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color:white;
+}

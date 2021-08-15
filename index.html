@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Profit Loss </title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align: center;">Hisab<span style="color: blueviolet;"> Kitab</span></h1>
+
+    <form>
+        
+        <label class="input-label" for="initial-price">
+            <input class="input" type="number" id="initial-price" 
+            placeholder="enter initial stock price here" min="0" required>
+            Initial Price
+        </label>
+
+        <label class="input-label" for="quantity-stocks">
+            <input class="input" type="number" id="quantity-stocks" 
+            placeholder="enter number of stocks here" min="0" required>
+            Stock Quantity
+        </label>
+
+        <label class="input-label" for="current-price">
+            <input class="input" type="number" id="current-price" 
+            placeholder="enter current stock price here" min="0" required>
+            Current Price
+        </label>
+        <button id="submit-btn">Check Status</button>
+        <div id="output"></div>
+    </form>
+
+    <footer>
+        <div>Contacts</div>
+        <ul>
+            <li>
+                <a href="https://shubhambishnoi.netlify.app" target="_blank">website</a>
+            </li>
+
+            <li>
+                <a href="https://github.com/shubhambishnoi" target="_blank">github</a>
+            </li>
+
+            <li>
+                <a href="https://linkedin.com/in/bishnoishubham" target="_blank">linkedin</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

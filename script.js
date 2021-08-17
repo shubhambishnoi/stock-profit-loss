@@ -26,7 +26,7 @@ function calculateProfitLoss(initialPrice,currentPrice,amount){
         var lossPercentage = (loss / initialPrice) * 100;
     
         showMessage(
-          `Sorry 😞, the loss is ${loss} and the loss percent is ${lossPercentage}%`
+          `Sorry 😞, your loss is ${loss} and the loss percent is ${lossPercentage}%`
         );
       } else if (currentPrice > initialPrice) {
        
@@ -35,7 +35,7 @@ function calculateProfitLoss(initialPrice,currentPrice,amount){
         var profitPercentage = (profit / initialPrice) * 100;
     
         showMessage(
-          `Congrats 😀 !!, the profit is ${profit} and the profit percent is ${profitPercentage}%`
+          `Congrats 😀 !!! your profit is ${profit} and the profit percent is ${profitPercentage}%`
         );
       } else {
         showMessage(`No change`);

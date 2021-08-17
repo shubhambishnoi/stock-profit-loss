@@ -2,10 +2,13 @@
     --primary-color:blueviolet;
 }
 
+#container{
+    display: flex;
+    justify-content: center;
+}
 .input-label{
    display: block;
    margin-top:40px;
-   margin-left:500px;
    font-size:20px;
    font-weight: 400;
 }
@@ -19,7 +22,6 @@
 
 #submit-btn{
     margin-top:20px;
-    margin-left:600px;
     border:2px solid var(--primary-color);
     border-radius: 1rem;
     padding:1rem;

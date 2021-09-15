@@ -19,6 +19,7 @@ function submitClickHandler(e){
 
 function calculateProfitLoss(initialPrice,currentPrice,amount){
 
+  if(initialPrice>0 && currentPrice>0 && amount>0){
     if (initialPrice > currentPrice) {
         
         document.body.style.backgroundColor="orange";
@@ -40,6 +41,9 @@ function calculateProfitLoss(initialPrice,currentPrice,amount){
       } else {
         showMessage(`No change`);
       }
+  }else{
+    showMessage(`Please enter positive values`)
+  }
 }
 
 function showMessage(msg){

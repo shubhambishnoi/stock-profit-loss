@@ -24,7 +24,7 @@ function calculateProfitLoss(initialPrice,currentPrice,amount){
         
         document.body.style.backgroundColor="orange";
         var loss = (initialPrice - currentPrice) * amount;
-        var lossPercentage = (loss / initialPrice) * 100;
+        var lossPercentage = (loss / (initialPrice*amount)) * 100;
     
         showMessage(
           `Sorry 😞, your loss is ${loss} and the loss percent is ${lossPercentage}%`
@@ -33,7 +33,7 @@ function calculateProfitLoss(initialPrice,currentPrice,amount){
        
         document.body.style.backgroundColor="green";
         var profit = (currentPrice - initialPrice) * amount;
-        var profitPercentage = (profit / initialPrice) * 100;
+        var profitPercentage = (profit / (initialPrice*amount)) * 100;
     
         showMessage(
           `Congrats 😀 !!! your profit is ${profit} and the profit percent is ${profitPercentage}%`
